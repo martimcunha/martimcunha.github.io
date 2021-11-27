@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/poupanca.css">
+    <img src="img/legal2.png" height="50%" width="100%">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="poupanca.html">Poupança</a></li>
+        <li><a href="porcentagem.html">Porcentagem</a></li>
+        <li><a href="veiculo.html">Veículo</a></li>
+        <li><a href="juros.html">Juros Simples</a></li>
+    </ul>
+    <h1>Simulador Financiamento Veículo</h1>
+    <p>Valor do Veículo R$:
+        <input type="text" id="inValor">
+    </p>
+    <p>Valor de Entrada R$:
+        <input type="text" id="inEntrada">
+    </p>
+    <p>Taxa de Juros (%):
+        <input type="text" id="inTaxa">
+    </p>
+    <p>Tempo de Financiamento (meses):
+        <input type="text" id="inPeriodo">
+    </p>
+    <p>
+        <input onclick="poupanca()" type="button" value="Calcular">
+        <input onclick="clearFields()" type="button" value="Limpar">
+    </p>
+    <h3 id="outResposta"></h3>
+    <h3 id="outResposta2"></h3>
+    <h3 id="outResposta3"></h3>
+    <script src="js/poupanca.js"></script>
+</body>
+</html>
