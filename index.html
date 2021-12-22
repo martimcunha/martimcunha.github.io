@@ -1,66 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/poupanca.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <img src="img/legal2.png" height="50%" width="100%">
+    <style>
+        *{
+            padding: 1px;
+            margin: 1px;
+            box-sizing: border-box;
+        }
+        .rodape_final{
+            background-color: gainsboro;
+            padding: 2px;
+            text-align: center;
+        }
+
+        .sec_rod{
+            border: 1px solid black;
+        }
+    </style>
     <title>Document</title>
 </head>
 <body>
-    <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="poupanca.html">Poupança</a></li>
-        <li><a href="porcentagem.html">Porcentagem</a></li>
-        <li><a href="veiculo.html">Veículo</a></li>
-        <li><a href="juros.html">Juros Simples</a></li>
-    </ul>
-    <br>
-    <h1>Escolha abaixo as simulações que deseja realizar!</h1>
-  <p>
-      <img src="img/fusca.jpg" alt="carro" class="alta">
-      <a href="veiculo.html">Financiamento Veículo</a><br>
-      <br>
-      Calcule as prestações e total a ser investido no seu próximo veículo.
-  </p>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+    <div id="header">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="poupanca.html">Poupança</a></li>
+            <li><a href="porcentagem.html">Porcentagem</a></li>
+            <li><a href="veiculo.html">Veículo</a></li>
+            <li><a href="juros.html">Juros Simples</a></li>
+        </ul>
 
-  <p>
-    <img src="img/dinheiro.jpg" alt="grana" class="alta">
-    <a href="poupanca.html">Investimento Poupança</a><br>
-    <br>
-    Simule seus investimentos em Poupança e entenda os valores acumulados e redimento total.
-</p>
-<br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <p>
-    <img src="img/percentual.jpg" alt="porcento" class="alta">
-    <a href="porcentagem.html">Cálculo de Percentual</a><br>
-    <br>
-    Verifique o quanto de percentual um determinado número representa. Prático e fácil!
-</p>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<p>
-    <img src="img/juros.jpg" alt="jur" class="alta">
-    <a href="juros.html">Cálculadora de Juros Simples</a><br>
-    <br>
-    Cálcule os juros simples com base em um determinado valor e período.
-</p>
-    <script src="js/poupanca.js"></script>
+        <h1>Escolha abaixo as simulações que deseja realizar!</h1>
+    </div>
+    <article>
+        <p>
+            <img src="img/fusca.jpg" alt="carro" class="alta">
+            <a href="veiculo.html">Financiamento Veículo</a><br>
+            <br>
+            Calcule as prestações e total a ser investido no seu próximo veículo.
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <p>
+            <img src="img/dinheiro.jpg" alt="grana" class="alta">
+            <a href="poupanca.html">Investimento Poupança</a><br>
+            <br>
+            Simule seus investimentos em Poupança e entenda os valores acumulados e redimento total.
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>
+            <img src="img/percentual.jpg" alt="porcento" class="alta">
+            <a href="porcentagem.html">Cálculo de Percentual</a><br>
+            <br>
+            Verifique o quanto de percentual um determinado número representa. Prático e fácil!
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>
+            <img src="img/juros.jpg" alt="jur" class="alta">
+            <a href="juros.html">Cálculadora de Juros Simples</a><br>
+            <br>
+            Cálcule os juros simples com base em um determinado valor e período.
+        </p>
+        <script src="js/poupanca.js"></script>
+        <br>
+        <br>
+        <br>
+        <br>
+    </article>
+
+    <footer class="rodape_final">
+        <p>calcTudo®</p>
+  
+        <p>A plataforma de cálculos para o seu dia a dia.</p>
+    </footer>
+
 </body>
+
 </html>
