@@ -1,3 +1,1 @@
 # calcTudo
-repositório calcTudo
-teste
