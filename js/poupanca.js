@@ -32,3 +32,11 @@ function clearFields() {
     document.getElementById("inValor").value = "";
     document.getElementById("inPeriodo").value = "";
 }
+
+function formatarValor(valor) {
+    return valor.toLocaleString('pt-BR');
+}
+
+console.log(formatarValor(outResposta));
+console.log(formatarValor(outResposta2));
+console.log(formatarValor(outResposta3));
