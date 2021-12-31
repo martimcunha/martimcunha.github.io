@@ -1,4 +1,12 @@
 
+html {
+    height: 100%;
+}
+
+body{
+    background-color: #FFF ;
+}
+
 img.alta { float: left; height: 150px; width: 220px; }
 
 h1 { border-bottom-style: inset;

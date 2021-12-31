@@ -9,24 +9,40 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <img src="img/legal2.png" height="50%" width="100%">
     <style>
+
+        html{
+            height: 100%;
+        }
+
         *{
             padding: 1px;
             margin: 1px;
             box-sizing: border-box;
+
         }
         .rodape_final{
-            background-color: gainsboro;
+            background-color: rgb(83, 81, 81);
             padding: 2px;
             text-align: center;
+            margin-top: auto;
+            color: white;
         }
 
         .sec_rod{
             border: 1px solid black;
         }
+
+        .corpo {
+
+            min-height: 100%;
+            background-color: whitesmoke;
+            display: flex;
+            flex-direction: column;
+        }
     </style>
     <title>Document</title>
 </head>
-<body>
+<body class="corpo">
     <div id="header">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -34,11 +50,23 @@
             <li><a href="porcentagem.html">Porcentagem</a></li>
             <li><a href="veiculo.html">Veículo</a></li>
             <li><a href="juros.html">Juros Simples</a></li>
+            <li><a href="regra3.html">Regra de Três</a></li>
         </ul>
 
-        <h1>Escolha abaixo as simulações que deseja realizar!</h1>
+        <h1>Escolha abaixo os cálculos que deseja realizar!</h1>
     </div>
     <article>
+        <p>
+            <img src="img/regra.jpg" alt="grana" class="alta">
+            <a href="regra3.html">Regra de Três</a><br>
+            <br>
+            Encontre o valor de "X", através da regra de três!
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+
         <p>
             <img src="img/fusca.jpg" alt="carro" class="alta">
             <a href="veiculo.html">Financiamento Veículo</a><br>

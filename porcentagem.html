@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,52 @@
     <link rel="stylesheet" href="css/poupanca.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <img src="img/legal2.png" height="50%" width="100%">
+    <style>
+
+        html{
+            height: 100%;
+        }
+
+        *{
+            padding: 1px;
+            margin: 1px;
+            box-sizing: border-box;
+
+        }
+        .rodape_final{
+            background-color: rgb(83, 81, 81);
+            padding: 2px;
+            text-align: center;
+            margin-top: auto;
+            color: white;
+        }
+
+        .sec_rod{
+            border: 1px solid black;
+        }
+
+        .corpo {
+
+            min-height: 100%;
+            background-color: whitesmoke;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
     <title>Document</title>
 </head>
-<body>
+
+<body class="corpo">
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="poupanca.html">Poupança</a></li>
         <li><a href="porcentagem.html">Porcentagem</a></li>
         <li><a href="veiculo.html">Veículo</a></li>
         <li><a href="juros.html">Juros Simples</a></li>
+        <li><a href="regra3.html">Regra de Três</a></li>
     </ul>
     <h1>Cálculo de Porcentagem</h1>
-    <p><label for="inPercentual">Insira o percentual que deseja extrair (%):</label> 
+    <p><label for="inPercentual">Insira o percentual que deseja extrair (%):</label>
         <input type="text" id="inPercentual">
     </p>
     <p><label for="inNumero">Insira o número:</label>
@@ -28,8 +63,19 @@
         <input onclick="percent()" type="button" value="Calcular">
         <input onclick="clearFields()" type="button" value="Limpar">
     </p>
-  
+
     <h3 id="outResposta"></h3>
+    <br>
+    <p>Utilise esta calculadora para verificar, de forma rápida e prática, o percentual de um determinado número. Este
+        cálculo tem aplicabildiade em no seu dia a dia, tanto na vida pessoal, quanto profissional.<br>
+        <br>
+    </p>
+    <footer class="rodape_final">
+        <p>calcTudo®</p>
+
+        <p>A plataforma de cálculos para o seu dia a dia.</p>
+    </footer>
     <script src="js/porcentagem.js"></script>
 </body>
+
 </html>

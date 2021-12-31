@@ -22,9 +22,11 @@ function poupanca() {
         periodo += calc1
     }
 
-    outResposta.textContent = "Total Investido R$: " + valor.toFixed(2);
-    outResposta2.textContent = "Total Rendimento R$: " + calc4.toFixed(2);
-    outResposta3.textContent = "Valor Total R$: " + calc3.toFixed(2);
+    outResposta.textContent = "Total Investido: " + valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+    outResposta2.textContent = "Total Rendimento: " + calc4.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+    outResposta3.textContent = "Valor Total: " + calc3.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 }
 
 function clearFields() {
@@ -32,11 +34,3 @@ function clearFields() {
     document.getElementById("inValor").value = "";
     document.getElementById("inPeriodo").value = "";
 }
-
-function formatarValor(valor) {
-    return valor.toLocaleString('pt-BR');
-}
-
-console.log(formatarValor(outResposta));
-console.log(formatarValor(outResposta2));
-console.log(formatarValor(outResposta3));
