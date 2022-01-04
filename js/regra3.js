@@ -16,7 +16,7 @@ function calculoRegra(){
     var calc1 = (valor2*valor3);
     var calc2 = calc1/valor1;
 
-    outResposta.textContent = "Valor de X é: " + calc2;
+    outResposta.textContent = "Valor de 'X' é: " + calc2.toFixed(2);
 }
 
 function clearFields() {

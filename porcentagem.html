@@ -48,20 +48,20 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="poupanca.html">Poupança</a></li>
         <li><a href="porcentagem.html">Porcentagem</a></li>
-        <li><a href="veiculo.html">Veículo</a></li>
         <li><a href="juros.html">Juros Simples</a></li>
         <li><a href="regra3.html">Regra de Três</a></li>
+        <li><a href="imc.html">IMC</a></li>
     </ul>
     <h1>Cálculo de Porcentagem</h1>
     <p><label for="inPercentual">Insira o percentual que deseja extrair (%):</label>
         <input type="text" id="inPercentual">
     </p>
-    <p><label for="inNumero">Insira o número:</label>
+    <p><label for="inNumero">Número que deseja extrair o percentual informado acima:</label>
         <input type="text" id="inNumero">
     </p>
     <p>
-        <input onclick="percent()" type="button" value="Calcular">
-        <input onclick="clearFields()" type="button" value="Limpar">
+        <input onclick="percent()" type="button" value="Calcular" class="btn btn-primary">
+        <input onclick="clearFields()" type="button" value="Limpar" class="btn btn-warning">
     </p>
 
     <h3 id="outResposta"></h3>
@@ -69,6 +69,8 @@
     <p>Utilise esta calculadora para verificar, de forma rápida e prática, o percentual de um determinado número. Este
         cálculo tem aplicabildiade em no seu dia a dia, tanto na vida pessoal, quanto profissional.<br>
         <br>
+        Exemplo de aplicabilidade: qual o valor correspondente a 18% de 3.000.00,00? Insira no primeiro campo o percentual (18) e no segundo campo insira o valor (3000000). <br>
+        <br> A resposta apresentada pelo sistema será de 540.000,00
     </p>
     <footer class="rodape_final">
         <p>calcTudo®</p>

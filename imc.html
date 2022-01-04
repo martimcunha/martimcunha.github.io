@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/poupanca.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <img src="img/legal2.png" height="50%" width="100%">
+        <style>
+    
+            html{
+                height: 100%;
+            }
+    
+            *{
+                padding: 1px;
+                margin: 1px;
+                box-sizing: border-box;
+    
+            }
+            .rodape_final{
+                background-color: rgb(83, 81, 81);
+                padding: 2px;
+                text-align: center;
+                margin-top: auto;
+                color: white;
+            }
+    
+            .sec_rod{
+                border: 1px solid black;
+            }
+    
+            .corpo {
+    
+                min-height: 100%;
+                background-color: whitesmoke;
+                display: flex;
+                flex-direction: column;
+            }
+        </style>
+        <title>Porcentagem</title>
+    </head>
+    
+    <body class="corpo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="poupanca.html">Poupança</a></li>
+            <li><a href="porcentagem.html">Porcentagem</a></li>
+            <li><a href="juros.html">Juros Simples</a></li>
+            <li><a href="regra3.html">Regra de Três</a></li>
+            <li><a href="imc.html">IMC</a></li>
+        </ul>
+    <h1>Cálculo de IMC (Índice de Massa Corporal)</h1>
+
+   <p>Sexo:
+        <input type="radio" name="sexo" id="rbMasculino"> Masculino
+        <input type="radio" name="sexo" id="rbFeminino"> Feminino
+   </p>
+        <p><label for="inIdade">Insira a sua idade:</label>
+            <input type="text" id="inIdade">
+        </p>
+        <p><label for="inAltura">Insira a sua altura:</label>
+            <input type="text" id="inAltura">
+        </p>
+        <p><label for="inPeso">Insira o seu peso:</label>
+            <input type="text" id="inPeso">
+        </p>
+        <p>
+            <input onclick="calculoImc()" type="button" value="Calcular" class="btn btn-primary">
+            <input onclick="clearFields()" type="button" value="Limpar" class="btn btn-warning">
+        </p>
+        <h3 id="outResposta"></h3>
+        <h3 id="outDiag"></h3>
+        <footer class="rodape_final">
+            <p>calcTudo®</p>
+    
+            <p>A plataforma de cálculos para o seu dia a dia.</p>
+        </footer>
+        <script src="js/imc.js"></script>
+    
+</body>
+</html>

@@ -4,10 +4,13 @@ html {
 }
 
 body{
-    background-color: #FFF ;
+    background-color: #FFF
+
+    
 }
 
 img.alta { float: left; height: 150px; width: 220px; }
+img.normal { float: center; height: 300px; width: 780px; }
 
 h1 { border-bottom-style: inset;
     font-size: 18px;

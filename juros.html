@@ -48,9 +48,9 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="poupanca.html">Poupança</a></li>
         <li><a href="porcentagem.html">Porcentagem</a></li>
-        <li><a href="veiculo.html">Veículo</a></li>
         <li><a href="juros.html">Juros Simples</a></li>
         <li><a href="regra3.html">Regra de Três</a></li>
+        <li><a href="imc.html">IMC</a></li>
     </ul>
     <h1>Calculadora de Juros Simples</h1>
     <p><label for="inValor">Valor Inicial R$:</label>
@@ -63,10 +63,19 @@
         <input type="text" id="inPeriodo">
     </p>
     <p>
-        <input onclick="calcJuros()" type="button" value="Calcular">
-        <input onclick="clearFields()" type="button" value="Limpar">
+        <input onclick="calcJuros()" type="button" value="Calcular" class="btn btn-primary">
+        <input onclick="clearFields()" type="button" value="Limpar" class="btn btn-warning">
     </p>
     <h3 id="outResposta"></h3>
+    <br>
+    <p>
+       Para calcular o montande total de uma rentabilidade com base em juros simples, basta informar nos campos o valor incial, taxa de juros a ser considerada e período da aplicação. <br>
+       <br> O quado abaixo mostra mais detalhes do cálculo realizado pelo sistema. Considerando o valor inicial de R$ 5.000,00, em um período de 6 mêses, com juros de 4%: <br>
+       <br>
+     
+        <img src="img/quadro_juros.jpg" alt="quadro" class="normal">
+
+    </p>
     <footer class="rodape_final">
         <p>calcTudo®</p>
 
