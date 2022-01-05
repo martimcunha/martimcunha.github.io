@@ -3,18 +3,21 @@ function calcJuros(){
     var inTaxa = document.getElementById("inTaxa");
     var inPeriodo = document.getElementById("inPeriodo");
 
-    var valor = Number(inValor.value);
-    var taxa = Number(inTaxa.value);
+    var valor = inValor.value;
+    var taxa = inTaxa.value;
     var periodo = Number(inPeriodo.value);
 
-    if (valor == 0 || taxa == 0 || periodo == 0 || isNaN(valor) || isNaN(taxa) || isNaN(periodo)){
-        alert("Por favor, preencha corretamnete.");
+    var valor1 = parseFloat(valor.replace(",", "."));
+    var taxa1 = parseFloat(taxa.replace(",", "."));
+
+    if (valor == 0 || taxa == 0 || periodo == 0 || isNaN(periodo)){
+        alert("Por favor, preencha corretamente.");
         inValor.focus();
         return;
     }
 
-    calc1 = valor * (taxa/100);
-    calc2 = (calc1 * periodo) + valor;
+    calc1 = valor1 * (taxa1/100);
+    calc2 = (calc1 * periodo) + valor1;
 
     outResposta.textContent = "Valor Total: " + calc2.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 }

@@ -8,10 +8,11 @@ function calculoImc() {
   var masculino = rbMasculino.checked;
   var feminino = rbFeminino.checked;
   var idade = Number(inIdade.value);
-  
-  var peso = Number(inPeso.value)
+  var altura = (inAltura.value);
+  var peso = (inPeso.value);
 
-  const altura = parseInt(inAltura.replace(',','.'))
+  var altura1 = parseFloat(altura.replace(",", "."));
+  var peso1 = parseFloat(peso.replace(",", "."));
 
   if (masculino == false && feminino == false) {
     alert("Por favor, selecione o sexo.");
@@ -19,21 +20,14 @@ function calculoImc() {
     return;
   }
 
-  if (
-    idade == 0 ||
-    altura == 0 ||
-    peso == 0 ||
-    isNaN(idade) ||
-    isNaN(altura) ||
-    isNaN(peso)
-  ) {
+  if (idade == 0 || altura == 0 || peso == 0 || isNaN(idade)) {
     alert("Por favor, preencha os campos corretamente.");
     inIdade.focus();
     return;
   }
 
-  calc1 = altura * altura;
-  calc2 = peso / calc1;
+  calc1 = altura1 * altura1;
+  calc2 = peso1 / calc1;
 
   if (calc2 <= 18.5) {
     outResposta.textContent = "Seu IMC é: " + calc2.toFixed(2) + "." + "\n";
@@ -67,8 +61,7 @@ function calculoImc() {
 }
 
 function clearFields() {
-
-    document.getElementById("inIdade").value = "";
-    document.getElementById("inAltura").value = "";
-    document.getElementById("inPeso").value = "";
+  document.getElementById("inIdade").value = "";
+  document.getElementById("inAltura").value = "";
+  document.getElementById("inPeso").value = "";
 }
