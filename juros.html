@@ -50,19 +50,19 @@
 							<button class="btn btn-search-back" type="button"><i class="bx bx-arrow-back"></i>
 							</button>
 						</div>
-						
+
 						<div class="input-group-append">
-						
+
 						</div>
 					</div>
 				</div>
 				<div class="right-topbar ml-auto">
 					<ul class="navbar-nav">
-						
-						
-						
-						
-						
+
+
+
+
+
 					</ul>
 				</div>
 			</nav>
@@ -105,28 +105,28 @@
 					</li>
 					<li>
 						<a class="has-arrow" href="regrade3.html">
-								<div class="parent-icon icon-color-3"><i class="bx bx-list-minus"></i>
-								</div>
-								<div class="menu-title">Regra de Três</div>
-							</a>
+							<div class="parent-icon icon-color-3"><i class="bx bx-list-minus"></i>
+							</div>
+							<div class="menu-title">Regra de Três</div>
+						</a>
 					</li>
 					<li>
 						<a class="has-arrow" href="imc.html">
-								<div class="parent-icon icon-color-4"><i class="bx bx-comment-edit"></i>
-								</div>
-								<div class="menu-title">IMC</div>
-							</a>
+							<div class="parent-icon icon-color-4"><i class="bx bx-comment-edit"></i>
+							</div>
+							<div class="menu-title">IMC</div>
+						</a>
 					</li>
-						<li>
-							<a class="has-arrow" href="porcentagem.html">
-									<div class="parent-icon icon-color-3"><i class="bx bx-loader-circle"></i>
-									</div>
-									<div class="menu-title">Percentual</div>
-							</a>
-							<ul>
-						</li>
-						</ul>
-					</li>	
+					<li>
+						<a class="has-arrow" href="porcentagem.html">
+							<div class="parent-icon icon-color-3"><i class="bx bx-loader-circle"></i>
+							</div>
+							<div class="menu-title">Percentual</div>
+						</a>
+						<ul>
+					</li>
+				</ul>
+				</li>
 				</ul>
 			</nav>
 		</div>
@@ -137,9 +137,6 @@
 			<div class="page-content-wrapper">
 				<div class="page-content">
 					<div class="row">
-
-						
-						
 					</div>
 					<!--end row-->
 					<div class="row">
@@ -147,75 +144,73 @@
 							<div class="card radius-15">
 								<div class="card-header border-bottom-0">
 									<div class="d-lg-flex align-items-center">
-									
+
 
 									</div>
 								</div>
 								<div class="card-body">
 
 
-									
-										<div class="card-title">
-											<h4 class="mb-0">Cálculo de Juros Simples</h4>
+
+									<div class="card-title">
+										<h4 class="mb-0">Cálculo de Juros Simples</h4>
+									</div>
+									<hr>
+
+
+									<div class="form-row">
+										<div class="col-md-6 mb-3">
+											<label for="inValor">Valor Inicial R$:</label>
+											<input type="text" class="form-control" id="inValor">
+											<div class="valid-feedback">Looks good!</div>
 										</div>
-										<hr>
-								
-									
-											<div class="form-row">
-												<div class="col-md-6 mb-3">
-													<label for="inValor">Valor Inicial R$:</label>
-													<input type="text" class="form-control" id="inValor">
-													<div class="valid-feedback">Looks good!</div>
-												</div>
-											
-											</div>
-											<div class="form-row">
-												<div class="col-md-6 mb-3">
-													<label for="inPeriodo">Taxa de Juros (%):</label>
-													<input type="text" class="form-control" id="inTaxa">
-													<div class="invalid-feedback">Please provide a valid city.</div>
-												</div>
-												
-												
-											</div>
 
-                                            <div class="form-row">
-												<div class="col-md-6 mb-3">
-													<label for="inPeriodo">Período (meses):</label>
-													<input type="text" class="form-control" id="inPeriodo">
-													<div class="invalid-feedback">Please provide a valid city.</div>
-												</div>
-												
-												
-											</div>
-											
-											<button onclick="calcJuros()" class="btn btn-primary" type="submit">Calcular</button>
-											<button onclick="clearFields()" class="btn btn-warning" type="submit">Limpar</button>
-								
-										<script>
-											// Example starter JavaScript for disabling form submissions if there are invalid fields
-											(function () {
-												'use strict';
-												window.addEventListener('load', function () {
-													// Fetch all the forms we want to apply custom Bootstrap validation styles to
-													var forms = document.getElementsByClassName('needs-validation');
-													// Loop over them and prevent submission
-													var validation = Array.prototype.filter.call(forms, function (form) {
-														form.addEventListener('submit', function (event) {
-															if (form.checkValidity() === false) {
-																event.preventDefault();
-																event.stopPropagation();
-															}
-															form.classList.add('was-validated');
-														}, false);
-													});
-												}, false);
-											})();
-										</script>
-									
+									</div>
+									<div class="form-row">
+										<div class="col-md-6 mb-3">
+											<label for="inPeriodo">Taxa de Juros (%):</label>
+											<input type="text" class="form-control" id="inTaxa">
+											<div class="invalid-feedback">Please provide a valid city.</div>
+										</div>
 
 
+									</div>
 
+									<div class="form-row">
+										<div class="col-md-6 mb-3">
+											<label for="inPeriodo">Período (meses):</label>
+											<input type="text" class="form-control" id="inPeriodo">
+											<div class="invalid-feedback">Please provide a valid city.</div>
+										</div>
+
+
+									</div>
+
+									<button onclick="calcJuros()" class="btn btn-primary"
+										type="submit">Calcular</button>
+									<button onclick="clearFields()" class="btn btn-warning"
+										type="submit">Limpar</button>
+
+									<script>
+										// Example starter JavaScript for disabling form submissions if there are invalid fields
+										(function () {
+											'use strict';
+											window.addEventListener('load', function () {
+												// Fetch all the forms we want to apply custom Bootstrap validation styles to
+												var forms = document.getElementsByClassName('needs-validation');
+												// Loop over them and prevent submission
+												var validation = Array.prototype.filter.call(forms, function (form) {
+													form.addEventListener('submit', function (event) {
+														if (form.checkValidity() === false) {
+															event.preventDefault();
+															event.stopPropagation();
+														}
+														form.classList.add('was-validated');
+													}, false);
+												});
+											}, false);
+										})();
+									</script>
 								</div>
 							</div>
 						</div>
@@ -223,7 +218,7 @@
 							<div class="card bg-success radius-15">
 								<div class="card-body">
 									<h5 class="card-title text-white">Valor Total:</h5>
-							
+
 									<h5 class="card-title text-white" id="outResposta"></h5>
 
 								</div>
@@ -234,48 +229,53 @@
 					<div class="row">
 						<div class="card radius-15">
 							<div class="card-header border-bottom-0">
-							
 
-								</div>
-							
-								<div class="card-body">
-									<div class="col-12">
-										<div class="card radius-15">
-                                            <div class="card-body">
-                                                <h5 class="card-title">Exemplo de Aplicabilidade</h5>
-                                            
-                                                <p class="text-justify">Para calcular o montande total de uma rentabilidade com base em juros simples, basta informar nos campos o valor incial, taxa de juros a ser considerada e período da aplicação. <br>
-                                                    <br> O quado abaixo mostra mais detalhes do cálculo realizado pelo sistema. Considerando o valor inicial de R$ 5.000,00, em um período de 6 mêses, com juros de 4%: <br>
-                                                    <br>
-                                                  
-                                                     <img src="assets/images/quadro_juros.png" alt="quadro" class="juros"></p>
-                                            </div>
-                                        </div>
+
+							</div>
+
+							<div class="card-body">
+								<div class="col-12">
+									<div class="card radius-15">
+										<div class="card-body">
+											<h5 class="card-title">Exemplo de Aplicabilidade</h5>
+
+											<p class="text-justify">Para calcular o montande total de uma rentabilidade
+												com base em juros simples, basta informar nos campos o valor incial,
+												taxa de juros a ser considerada e período da aplicação. <br>
+												<br> O quado abaixo mostra mais detalhes do cálculo realizado pelo
+												sistema. Considerando o valor inicial de R$ 5.000,00, em um período de 6
+												mêses, com juros de 4%: <br>
+												<br>
+
+												<img src="assets/images/quadro_juros.png" alt="quadro" class="juros">
+											</p>
+										</div>
 									</div>
 								</div>
-							</div>		
+							</div>
 						</div>
-					</div>	
-						<!--end row-->
-
-					<!--end row-->
-
+					</div>
 				</div>
+				<!--end row-->
+
+				<!--end row-->
+
 			</div>
-			<!--end page-content-wrapper-->
 		</div>
-		<!--end page-wrapper-->
-		<!--start overlay-->
-		<div class="overlay toggle-btn-mobile"></div>
-		<!--end overlay-->
-		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
-		<!--End Back To Top Button-->
-		<!--footer -->
-		<div class="footer">
-			<p class="mb-0">calcTudo @2021 | Developed By : <a href="javascript:;">calcTudo</a>
-			</p>
-		</div>
-		<!-- end footer -->
+		<!--end page-content-wrapper-->
+	</div>
+	<!--end page-wrapper-->
+	<!--start overlay-->
+	<div class="overlay toggle-btn-mobile"></div>
+	<!--end overlay-->
+	<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+	<!--End Back To Top Button-->
+	<!--footer -->
+	<div class="footer">
+		<p class="mb-0">calcTudo @2021 | Developed By : <a href="javascript:;">calcTudo</a>
+		</p>
+	</div>
+	<!-- end footer -->
 	</div>
 	<!-- end wrapper -->
 	<!--start switcher-->
@@ -284,9 +284,9 @@
 		</div>
 		<div class="switcher-body">
 			<h5 class="mb-0 text-uppercase">Theme Customizer</h5>
-			<hr/>
+			<hr />
 			<h6 class="mb-0">Theme Styles</h6>
-			<hr/>
+			<hr />
 			<div class="d-flex align-items-center justify-content-between">
 				<div class="custom-control custom-radio">
 					<input type="radio" id="darkmode" name="customRadio" class="custom-control-input">
@@ -297,17 +297,17 @@
 					<label class="custom-control-label" for="lightmode">Light Mode</label>
 				</div>
 			</div>
-			<hr/>
+			<hr />
 			<div class="custom-control custom-switch">
 				<input type="checkbox" class="custom-control-input" id="DarkHeader">
 				<label class="custom-control-label" for="DarkHeader">Dark Header</label>
 			</div>
-			<hr/>
+			<hr />
 			<div class="custom-control custom-switch">
 				<input type="checkbox" class="custom-control-input" id="DarkMenu">
 				<label class="custom-control-label" for="DarkMenu">Dark Menu</label>
 			</div>
-			<hr/>
+			<hr />
 			<div class="custom-control custom-switch">
 				<input type="checkbox" class="custom-control-input" id="ColorLessIcons">
 				<label class="custom-control-label" for="ColorLessIcons">Color Less Icons</label>
