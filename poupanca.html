@@ -5,7 +5,7 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	<title>calcTudo - Bootstrap4 Admin Template</title>
+	<title>calcTudo</title>
 	<!--favicon-->
 	<link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" />
 	<!-- Vector CSS -->
@@ -50,19 +50,19 @@
 							<button class="btn btn-search-back" type="button"><i class="bx bx-arrow-back"></i>
 							</button>
 						</div>
-						
+
 						<div class="input-group-append">
-						
+
 						</div>
 					</div>
 				</div>
 				<div class="right-topbar ml-auto">
 					<ul class="navbar-nav">
-						
-						
-						
-						
-						
+
+
+
+
+
 					</ul>
 				</div>
 			</nav>
@@ -105,32 +105,32 @@
 					</li>
 					<li>
 						<a class="has-arrow" href="regrade3.html">
-								<div class="parent-icon icon-color-3"><i class="bx bx-list-minus"></i>
-								</div>
-								<div class="menu-title">Regra de Três</div>
-							</a>
+							<div class="parent-icon icon-color-3"><i class="bx bx-list-minus"></i>
+							</div>
+							<div class="menu-title">Regra de Três</div>
+						</a>
 					</li>
 					<li>
 						<a class="has-arrow" href="imc.html">
-								<div class="parent-icon icon-color-4"><i class="bx bx-comment-edit"></i>
-								</div>
-								<div class="menu-title">IMC</div>
-							</a>
+							<div class="parent-icon icon-color-4"><i class="bx bx-comment-edit"></i>
+							</div>
+							<div class="menu-title">IMC</div>
+						</a>
 					</li>
-						<li>
-							<a class="has-arrow" href="porcentagem.html">
-									<div class="parent-icon icon-color-3"><i class="bx bx-loader-circle"></i>
-									</div>
-									<div class="menu-title">Percentual</div>
-							</a>
-							<ul>
-						</li>
-						</ul>
+					<li>
+						<a class="has-arrow" href="porcentagem.html">
+							<div class="parent-icon icon-color-3"><i class="bx bx-loader-circle"></i>
+							</div>
+							<div class="menu-title">Percentual</div>
+						</a>
+						<ul>
 					</li>
-					
-					
-					
-					
+				</ul>
+				</li>
+
+
+
+
 				</ul>
 			</nav>
 		</div>
@@ -142,8 +142,8 @@
 				<div class="page-content">
 					<div class="row">
 
-						
-						
+
+
 					</div>
 					<!--end row-->
 					<div class="row">
@@ -151,48 +151,45 @@
 							<div class="card radius-15">
 								<div class="card-header border-bottom-0">
 									<div class="d-lg-flex align-items-center">
-									
+
 
 									</div>
 								</div>
 								<div class="card-body">
 
 
-									
-										<div class="card-title">
-											<h4 class="mb-0">Calculo de Retorno Poupança</h4>
+
+									<div class="card-title">
+										<h4 class="mb-0">Calculo de Retorno Poupança</h4>
+									</div>
+									<hr>
+
+									<div class="form-row">
+										<div class="col-md-6 mb-3">
+											<label for="inValor">Valor Investido</label>
+											<input type="text" class="form-control" id="inValor">
+											<div class="valid-feedback">Looks good!</div>
 										</div>
-										<hr>
-								
-											<div class="form-row">
-												<div class="col-md-6 mb-3">
-													<label for="inValor">Valor Investido</label>
-													<input type="text" class="form-control" id="inValor">
-													<div class="valid-feedback">Looks good!</div>
-												</div>
-											
-											</div>
-											<div class="form-row">
-												<div class="col-md-6 mb-3">
-													<label for="inPeriodo">Período (meses)</label>
-													<input type="text" class="form-control" id="inPeriodo">
-													<div class="invalid-feedback">Please provide a valid city.</div>
-												</div>
-												
-												
-											</div>
-											
-											<button onclick="poupanca()" class="btn btn-primary" type="submit">Calcular</button>
-											<button onclick="clearFields()" class="btn btn-warning" type="submit">Limpar</button>
-									
-										<br>
-										<br>
-										<p>A taxa de referência para o cálcula é atualizada diariamente, conforme índice apresentado pelo Banco Central.</p>
-									
-									
+
+									</div>
+									<div class="form-row">
+										<div class="col-md-6 mb-3">
+											<label for="inPeriodo">Período (meses)</label>
+											<input type="text" class="form-control" id="inPeriodo">
+											<div class="invalid-feedback">Please provide a valid city.</div>
+										</div>
 
 
+									</div>
 
+									<button onclick="poupanca()" class="btn btn-primary" type="submit">Calcular</button>
+									<button onclick="clearFields()" class="btn btn-warning"
+										type="submit">Limpar</button>
+
+									<br>
+									<br>
+									<p>A taxa de referência para o cálcula é atualizada diariamente, conforme índice
+										apresentado pelo Banco Central.</p>
 								</div>
 							</div>
 						</div>
@@ -200,40 +197,43 @@
 							<div class="card-deck flex-column flex-lg-row">
 								<div class="card radius-15 bg-info">
 									<div class="card-body text-center">
-										<div class="widgets-icons mx-auto rounded-circle bg-white"><i class='bx bx-bookmark-alt'></i>
+										<div class="widgets-icons mx-auto rounded-circle bg-white"><i
+												class='bx bx-bookmark-alt'></i>
 										</div>
 										<h4 class="text-white" id="outResposta"></h4>
 										<p class="mb-0 text-white">Valor Investido</p>
 									</div>
 								</div>
-							
-								
+
+
 							</div>
 
 							<div class="card-deck flex-column flex-lg-row">
 								<div class="card radius-15 bg-wall">
 									<div class="card-body text-center">
-										<div class="widgets-icons mx-auto rounded-circle bg-white"><i class='bx bx-time'></i>
+										<div class="widgets-icons mx-auto rounded-circle bg-white"><i
+												class='bx bx-time'></i>
 										</div>
 										<h4 class="text-white" id="outResposta2"></h4>
 										<p class="mb-0 text-white">Rendimento</p>
 									</div>
 								</div>
-								
-								
+
+
 							</div>
 
 							<div class="card-deck flex-column flex-lg-row">
 								<div class="card radius-15 bg-danger">
 									<div class="card-body text-center">
-										<div class="widgets-icons mx-auto rounded-circle bg-white"><i class='bx bx-line-chart'></i>
+										<div class="widgets-icons mx-auto rounded-circle bg-white"><i
+												class='bx bx-line-chart'></i>
 										</div>
 										<h4 class="text-white" id="outResposta3"></h4>
 										<p class="mb-0 text-white">Valor Total</p>
 									</div>
 								</div>
-								
-								
+
+
 							</div>
 						</div>
 					</div>
@@ -241,66 +241,81 @@
 					<div class="row">
 						<div class="card radius-15">
 							<div class="card-header border-bottom-0">
-								
 
-								</div>
-							
-								<div class="card-body">
-									<div class="col-12">
-										<div class="card mb-3">
-											
-                                            <div class="card">
-                                                <div class="row no-gutters">
-                                                    <div class="col-md-4">
-                                                        <img src="assets/images/poupanca2.png" class="card-img" alt="regra">
-                                                    </div>
-                                                    <div class="col-md-8">
-                                                        <div class="card-body">
-                                                            <h5 class="card-title">Cálculo Poupança</h5>
-                                                            <p class="card-text"> <p>A poupança é uma modalidade de investimento que nasceu na época do Brasil Império. Mais precisamente através do Imperador Dom Pedro II em 1861. Apesar de muito antiga, a poupança ainda é um investimento muito interessante. <br>
-																<br> O investimento em poupança sempre é muito questionado pelos analistas de investimento. Porém, ainda é considerado um excelente investimento, principalmente para reservas de emergência. O motivo: alta liquidez. Algo primordial em uma reserva de emrrgência. Diferente de outros
-																investimentos da renda fixa (CDB, Tesouro Direto, entre outros), poupança tem liquidez.<br>
-																<br>
-																Portanto, a poupança ainda é uma forma muito útil de guardar o seu dinheiro para qualquer emergência que
-																precisar. Importante entender também que o objetivo da poupança, não é rentabilidade, mas sim, segurança e acesso fácil ao dinheiro. <br>
-																<br>
-																Esta calculadora visa auxiliá-lo a calcular o quanto o seu dinheiro renderá na poupança, com base em seu
-																investimento e tempo. Tempo é um fator muito importante para garantir que o seu dinheiro, aplicado na poupança ou qualquer outro
-																produto da renda fixa, possa rentabilizar mais. <br>
-														
-															</p>
-                                                            
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+
+							</div>
+
+							<div class="card-body">
+								<div class="col-12">
+									<div class="card mb-3">
+
+										<div class="card">
+											<div class="row no-gutters">
+												<div class="col-md-4">
+													<img src="assets/images/poupanca2.png" class="card-img" alt="regra">
+												</div>
+												<div class="col-md-8">
+													<div class="card-body">
+														<h5 class="card-title">Cálculo Poupança</h5>
+														<p class="card-text">
+														<p>A poupança é uma modalidade de investimento que nasceu na
+															época do Brasil Império. Mais precisamente através do
+															Imperador Dom Pedro II em 1861. Apesar de muito antiga, a
+															poupança ainda é um investimento muito interessante. <br>
+															<br> O investimento em poupança sempre é muito questionado
+															pelos analistas de investimento. Porém, ainda é considerado
+															um excelente investimento, principalmente para reservas de
+															emergência. O motivo: alta liquidez. Algo primordial em uma
+															reserva de emrrgência. Diferente de outros
+															investimentos da renda fixa (CDB, Tesouro Direto, entre
+															outros), poupança tem liquidez.<br>
+															<br>
+															Portanto, a poupança ainda é uma forma muito útil de guardar
+															o seu dinheiro para qualquer emergência que
+															precisar. Importante entender também que o objetivo da
+															poupança, não é rentabilidade, mas sim, segurança e acesso
+															fácil ao dinheiro. <br>
+															<br>
+															Esta calculadora visa auxiliá-lo a calcular o quanto o seu
+															dinheiro renderá na poupança, com base em seu
+															investimento e tempo. Tempo é um fator muito importante para
+															garantir que o seu dinheiro, aplicado na poupança ou
+															qualquer outro
+															produto da renda fixa, possa rentabilizar mais. <br>
+
+														</p>
+
+														</p>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>		
+							</div>
 						</div>
-					</div>	
-						<!--end row-->
-
-					<!--end row-->
-
+					</div>
 				</div>
+				<!--end row-->
+
+				<!--end row-->
+
 			</div>
-			<!--end page-content-wrapper-->
 		</div>
-		<!--end page-wrapper-->
-		<!--start overlay-->
-		<div class="overlay toggle-btn-mobile"></div>
-		<!--end overlay-->
-		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
-		<!--End Back To Top Button-->
-		<!--footer -->
-		<div class="footer">
-			<p class="mb-0">calcTudo @2021 | Developed By : <a href="javascript:;">calcTudo</a>
-			</p>
-		</div>
-		<!-- end footer -->
+		<!--end page-content-wrapper-->
+	</div>
+	<!--end page-wrapper-->
+	<!--start overlay-->
+	<div class="overlay toggle-btn-mobile"></div>
+	<!--end overlay-->
+	<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+	<!--End Back To Top Button-->
+	<!--footer -->
+	<div class="footer">
+		<p class="mb-0">calcTudo @2021 | Developed By : <a href="javascript:;">calcTudo</a>
+		</p>
+	</div>
+	<!-- end footer -->
 	</div>
 	<!-- end wrapper -->
 	<!--start switcher-->
@@ -309,9 +324,9 @@
 		</div>
 		<div class="switcher-body">
 			<h5 class="mb-0 text-uppercase">Theme Customizer</h5>
-			<hr/>
+			<hr />
 			<h6 class="mb-0">Theme Styles</h6>
-			<hr/>
+			<hr />
 			<div class="d-flex align-items-center justify-content-between">
 				<div class="custom-control custom-radio">
 					<input type="radio" id="darkmode" name="customRadio" class="custom-control-input">
@@ -322,17 +337,17 @@
 					<label class="custom-control-label" for="lightmode">Light Mode</label>
 				</div>
 			</div>
-			<hr/>
+			<hr />
 			<div class="custom-control custom-switch">
 				<input type="checkbox" class="custom-control-input" id="DarkHeader">
 				<label class="custom-control-label" for="DarkHeader">Dark Header</label>
 			</div>
-			<hr/>
+			<hr />
 			<div class="custom-control custom-switch">
 				<input type="checkbox" class="custom-control-input" id="DarkMenu">
 				<label class="custom-control-label" for="DarkMenu">Dark Menu</label>
 			</div>
-			<hr/>
+			<hr />
 			<div class="custom-control custom-switch">
 				<input type="checkbox" class="custom-control-input" id="ColorLessIcons">
 				<label class="custom-control-label" for="ColorLessIcons">Color Less Icons</label>
