@@ -10,7 +10,7 @@ function percent() {
 
   var calc = (percentual1 / 100) * numero1;
 
-  outResposta.textContent = "Total: " + calc.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2});
+  outResposta.textContent = calc.toLocaleString("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2});
 }
 
 function clearFields() {

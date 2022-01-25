@@ -2,120 +2,369 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/poupanca.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <img src="img/legal2.png" height="50%" width="100%">
-    <style>
-
-        html{
-            height: 100%;
-        }
-
-        *{
-            padding: 1px;
-            margin: 1px;
-            box-sizing: border-box;
-
-        }
-        .rodape_final{
-            background-color: rgb(83, 81, 81);
-            padding: 2px;
-            text-align: center;
-            margin-top: auto;
-            color: white;
-        }
-
-        .sec_rod{
-            border: 1px solid black;
-        }
-
-        .corpo {
-
-            min-height: 100%;
-            background-color: whitesmoke;
-            display: flex;
-            flex-direction: column;
-        }
-    </style>
-    <title>Home</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>calcTudo - Bootstrap4 Admin Template</title>
+	<!--favicon-->
+	<link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" />
+	<!-- Vector CSS -->
+	<link href="assets/plugins/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
+	<!--plugins-->
+	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+	<link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+	<!-- loader-->
+	<link href="assets/css/pace.min.css" rel="stylesheet" />
+	<script src="eeeeeeassets/js/pace.min.js"></script>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+	<!-- Icons CSS -->
+	<link rel="stylesheet" href="assets/css/icons.css" />
+	<!-- App CSS -->
+	<link rel="stylesheet" href="assets/css/app.css" />
+	<link rel="stylesheet" href="assets/css/dark-header.css" />
+	<link rel="stylesheet" href="assets/css/dark-theme.css" />
+	<link rel="stylesheet" href="assets/css/estilos.css">
 </head>
-<body class="corpo">
-    <div id="header">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="poupanca.html">Poupança</a></li>
-            <li><a href="porcentagem.html">Porcentagem</a></li>
-            <li><a href="juros.html">Juros Simples</a></li>
-            <li><a href="regra3.html">Regra de Três</a></li>
-            <li><a href="imc.html">IMC</a></li>
-        </ul>
 
-        <h1>Escolha abaixo os cálculos que deseja realizar!</h1>
-    </div>
-    <article>
-        <p>
-            <img src="img/regra.jpg" alt="grana" class="alta">
-            <a href="regra3.html">Regra de Três</a><br>
-            <br>
-            Encontre o valor de "X", através da regra de três!
-        </p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p>
-            <img src="img/dinheiro.jpg" alt="grana" class="alta">
-            <a href="poupanca.html">Investimento Poupança</a><br>
-            <br>
-            Simule seus investimentos em Poupança e entenda os valores acumulados e redimento total.
-        </p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p>
-            <img src="img/percentual.jpg" alt="porcento" class="alta">
-            <a href="porcentagem.html">Cálculo de Percentual</a><br>
-            <br>
-            Verifique o quanto de percentual um determinado número representa. Prático e fácil!
-        </p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p>
-            <img src="img/juros.jpg" alt="jur" class="alta">
-            <a href="juros.html">Cálculadora de Juros Simples</a><br>
-            <br>
-            Cálcule os juros simples com base em um determinado valor e período.
-        </p>
-        <script src="js/poupanca.js"></script>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p>
-            <img src="img/imc.jpg" alt="imcc" class="alta">
-            <a href="imc.html">IMC (Índice de Massa Corporal)</a><br>
-            <br>
-            Verifique o seu índice de massa coporal.
-        </p>
-        <script src="js/poupanca.js"></script>
-        <br>
-        <br>
-        <br>
-        <br>
-    </article>
+<body>
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!--header-->
+		<header class="top-header">
+			<nav class="navbar navbar-expand">
+				<div class="sidebar-header">
+					<div class="d-none d-lg-flex">
+						<img src="assets/images/logo-icon.png" class="logo-icon-2" alt="" />
+					</div>
+					<div>
+						<h4 class="d-none d-lg-flex logo-text">calcTudo</h4>
+					</div>
+					<a href="javascript:;" class="toggle-btn ml-lg-auto"> <i class="bx bx-menu"></i>
+					</a>
+				</div>
+				<div class="flex-grow-1 search-bar">
+					<div class="input-group">
+						<div class="input-group-prepend search-arrow-back">
+							<button class="btn btn-search-back" type="button"><i class="bx bx-arrow-back"></i>
+							</button>
+						</div>
+						
+						<div class="input-group-append">
+						
+						</div>
+					</div>
+				</div>
+				<div class="right-topbar ml-auto">
+					<ul class="navbar-nav">
+						
+						
+						
+						
+						
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!--end header-->
+		<!--navigation-->
+		<div class="nav-container">
+			<div class="mobile-topbar-header">
+				<div class="">
+					<img src="assets/images/logo-icon.png" class="logo-icon-2" alt="" />
+				</div>
+				<div>
+					<h4 class="logo-text">calcTudo</h4>
+				</div>
+				<a href="javascript:;" class="toggle-btn ml-auto"> <i class="bx bx-menu"></i>
+				</a>
+			</div>
+			<nav class="topbar-nav">
+				<ul class="metismenu" id="menu">
+					<li>
+						<a href="home.html" class="has-arrow">
+							<div class="parent-icon icon-color-1"><i class="bx bx-home-alt"></i>
+							</div>
+							<div class="menu-title">Home</div>
+						</a>
+					</li>
+					<li>
+						<a href="index.html" class="has-arrow">
+							<div class="parent-icon icon-color-2"><i class='bx bx-briefcase-alt'></i>
+							</div>
+							<div class="menu-title">Poupança</div>
+						</a>
+					</li>
+					<li>
+						<a class="has-arrow" href="juros.html">
+							<div class="parent-icon icon-color-3"><i class="bx bx-line-chart"></i>
+							</div>
+							<div class="menu-title">Juros Simples</div>
+						</a>
+					</li>
+					<li>
+						<a class="has-arrow" href="regrade3.html">
+								<div class="parent-icon icon-color-3"><i class="bx bx-list-minus"></i>
+								</div>
+								<div class="menu-title">Regra de Três</div>
+							</a>
+					</li>
+					<li>
+						<a class="has-arrow" href="imc.html">
+								<div class="parent-icon icon-color-4"><i class="bx bx-comment-edit"></i>
+								</div>
+								<div class="menu-title">IMC</div>
+							</a>
+					</li>
+						<li>
+							<a class="has-arrow" href="porcentagem.html">
+									<div class="parent-icon icon-color-3"><i class="bx bx-loader-circle"></i>
+									</div>
+									<div class="menu-title">Percentual</div>
+							</a>
+							<ul>
+						</li>
+						</ul>
+					</li>
+					
+					
+					
+					
+				</ul>
+			</nav>
+		</div>
+		<!--end navigation-->
+		<!--page-wrapper-->
+		<div class="page-wrapper">
+			<!--page-content-wrapper-->
+			<div class="page-content-wrapper">
+				<div class="page-content">
+					<div class="row">
 
-    <footer class="rodape_final">
-        <p>calcTudo®</p>
-  
-        <p>A plataforma de cálculos para o seu dia a dia.</p>
-    </footer>
+						
+						
+					</div>
+					<!--end row-->
+					<div class="row">
+						<div class="col-12 col-lg-8">
+							<div class="card radius-15">
+								<div class="card-header border-bottom-0">
+									<div class="d-lg-flex align-items-center">
+									
 
+									</div>
+								</div>
+								<div class="card-body">
+
+
+									
+										<div class="card-title">
+											<h4 class="mb-0">Calculo de Retorno Poupança</h4>
+										</div>
+										<hr>
+								
+											<div class="form-row">
+												<div class="col-md-6 mb-3">
+													<label for="inValor">Valor Investido</label>
+													<input type="text" class="form-control" id="inValor">
+													<div class="valid-feedback">Looks good!</div>
+												</div>
+											
+											</div>
+											<div class="form-row">
+												<div class="col-md-6 mb-3">
+													<label for="inPeriodo">Período (meses)</label>
+													<input type="text" class="form-control" id="inPeriodo">
+													<div class="invalid-feedback">Please provide a valid city.</div>
+												</div>
+												
+												
+											</div>
+											
+											<button onclick="poupanca()" class="btn btn-primary" type="submit">Calcular</button>
+											<button onclick="clearFields()" class="btn btn-warning" type="submit">Limpar</button>
+									
+										<br>
+										<br>
+										<p>A taxa de referência para o cálcula é atualizada diariamente, conforme índice apresentado pelo Banco Central.</p>
+									
+									
+
+
+
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-4">
+							<div class="card-deck flex-column flex-lg-row">
+								<div class="card radius-15 bg-info">
+									<div class="card-body text-center">
+										<div class="widgets-icons mx-auto rounded-circle bg-white"><i class='bx bx-bookmark-alt'></i>
+										</div>
+										<h4 class="text-white" id="outResposta"></h4>
+										<p class="mb-0 text-white">Valor Investido</p>
+									</div>
+								</div>
+							
+								
+							</div>
+
+							<div class="card-deck flex-column flex-lg-row">
+								<div class="card radius-15 bg-wall">
+									<div class="card-body text-center">
+										<div class="widgets-icons mx-auto rounded-circle bg-white"><i class='bx bx-time'></i>
+										</div>
+										<h4 class="text-white" id="outResposta2"></h4>
+										<p class="mb-0 text-white">Rendimento</p>
+									</div>
+								</div>
+								
+								
+							</div>
+
+							<div class="card-deck flex-column flex-lg-row">
+								<div class="card radius-15 bg-danger">
+									<div class="card-body text-center">
+										<div class="widgets-icons mx-auto rounded-circle bg-white"><i class='bx bx-line-chart'></i>
+										</div>
+										<h4 class="text-white" id="outResposta3"></h4>
+										<p class="mb-0 text-white">Valor Total</p>
+									</div>
+								</div>
+								
+								
+							</div>
+						</div>
+					</div>
+					<!--end row-->
+					<div class="row">
+						<div class="card radius-15">
+							<div class="card-header border-bottom-0">
+								
+
+								</div>
+							
+								<div class="card-body">
+									<div class="col-12">
+										<div class="card mb-3">
+											
+                                            <div class="card">
+                                                <div class="row no-gutters">
+                                                    <div class="col-md-4">
+                                                        <img src="assets/images/poupanca2.png" class="card-img" alt="regra">
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Cálculo Poupança</h5>
+                                                            <p class="card-text"> <p>A poupança é uma modalidade de investimento que nasceu na época do Brasil Império. Mais precisamente através do Imperador Dom Pedro II em 1861. Apesar de muito antiga, a poupança ainda é um investimento muito interessante. <br>
+																<br> O investimento em poupança sempre é muito questionado pelos analistas de investimento. Porém, ainda é considerado um excelente investimento, principalmente para reservas de emergência. O motivo: alta liquidez. Algo primordial em uma reserva de emrrgência. Diferente de outros
+																investimentos da renda fixa (CDB, Tesouro Direto, entre outros), poupança tem liquidez.<br>
+																<br>
+																Portanto, a poupança ainda é uma forma muito útil de guardar o seu dinheiro para qualquer emergência que
+																precisar. Importante entender também que o objetivo da poupança, não é rentabilidade, mas sim, segurança e acesso fácil ao dinheiro. <br>
+																<br>
+																Esta calculadora visa auxiliá-lo a calcular o quanto o seu dinheiro renderá na poupança, com base em seu
+																investimento e tempo. Tempo é um fator muito importante para garantir que o seu dinheiro, aplicado na poupança ou qualquer outro
+																produto da renda fixa, possa rentabilizar mais. <br>
+														
+															</p>
+                                                            
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+										</div>
+									</div>
+								</div>
+							</div>		
+						</div>
+					</div>	
+						<!--end row-->
+
+					<!--end row-->
+
+				</div>
+			</div>
+			<!--end page-content-wrapper-->
+		</div>
+		<!--end page-wrapper-->
+		<!--start overlay-->
+		<div class="overlay toggle-btn-mobile"></div>
+		<!--end overlay-->
+		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+		<!--End Back To Top Button-->
+		<!--footer -->
+		<div class="footer">
+			<p class="mb-0">calcTudo @2021 | Developed By : <a href="javascript:;">calcTudo</a>
+			</p>
+		</div>
+		<!-- end footer -->
+	</div>
+	<!-- end wrapper -->
+	<!--start switcher-->
+	<div class="switcher-wrapper">
+		<div class="switcher-btn"> <i class='bx bx-cog bx-spin'></i>
+		</div>
+		<div class="switcher-body">
+			<h5 class="mb-0 text-uppercase">Theme Customizer</h5>
+			<hr/>
+			<h6 class="mb-0">Theme Styles</h6>
+			<hr/>
+			<div class="d-flex align-items-center justify-content-between">
+				<div class="custom-control custom-radio">
+					<input type="radio" id="darkmode" name="customRadio" class="custom-control-input">
+					<label class="custom-control-label" for="darkmode">Dark Mode</label>
+				</div>
+				<div class="custom-control custom-radio">
+					<input type="radio" id="lightmode" name="customRadio" checked class="custom-control-input">
+					<label class="custom-control-label" for="lightmode">Light Mode</label>
+				</div>
+			</div>
+			<hr/>
+			<div class="custom-control custom-switch">
+				<input type="checkbox" class="custom-control-input" id="DarkHeader">
+				<label class="custom-control-label" for="DarkHeader">Dark Header</label>
+			</div>
+			<hr/>
+			<div class="custom-control custom-switch">
+				<input type="checkbox" class="custom-control-input" id="DarkMenu">
+				<label class="custom-control-label" for="DarkMenu">Dark Menu</label>
+			</div>
+			<hr/>
+			<div class="custom-control custom-switch">
+				<input type="checkbox" class="custom-control-input" id="ColorLessIcons">
+				<label class="custom-control-label" for="ColorLessIcons">Color Less Icons</label>
+			</div>
+		</div>
+	</div>
+	<!--end switcher-->
+	<!-- JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!--plugins-->
+	<script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+	<script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
+	<script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+	<!-- Vector map JavaScript -->
+	<script src="assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
+	<script src="assets/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+	<script src="assets/plugins/vectormap/jquery-jvectormap-in-mill.js"></script>
+	<script src="assets/plugins/vectormap/jquery-jvectormap-us-aea-en.js"></script>
+	<script src="assets/plugins/vectormap/jquery-jvectormap-uk-mill-en.js"></script>
+	<script src="assets/plugins/vectormap/jquery-jvectormap-au-mill.js"></script>
+	<script src="assets/plugins/apexcharts-bundle/js/apexcharts.min.js"></script>
+	<script src="assets/js/index.js"></script>
+	<!-- App JS -->
+	<script src="assets/js/app.js"></script>
+	<script>
+		new PerfectScrollbar('.dashboard-social-list');
+		new PerfectScrollbar('.dashboard-top-countries');
+	</script>
+	<script src="js/poupanca.js"></script>
 </body>
 
 </html>

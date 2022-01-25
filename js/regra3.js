@@ -17,10 +17,10 @@ function calculoRegra(){
         return;
     }
 
-    var calc1 = (valor2a*valor3a);
-    var calc2 = calc1/valor1a;
+    var calc1 = valor2a * valor3a;
+    var calc2 = calc1 / valor1a;
 
-    outResposta.textContent = "Valor de 'X' é: " + calc2.toFixed(2);
+    outResposta.textContent = calc2.toFixed(2);
 }
 
 function clearFields() {

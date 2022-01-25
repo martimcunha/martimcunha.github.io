@@ -30,33 +30,33 @@ function calculoImc() {
   calc2 = peso1 / calc1;
 
   if (calc2 <= 18.5) {
-    outResposta.textContent = "Seu IMC é: " + calc2.toFixed(2) + "." + "\n";
-    outDiag.textContent = "Status: Abaixo do Peso.";
+    outResposta.textContent = calc2.toFixed(2) + "." + "\n";
+    outDiag.textContent = "Abaixo do Peso.";
   }
 
   if (calc2 >= 18.6 && calc2 <= 24.9) {
-    outResposta.textContent = "Seu IMC é: " + calc2.toFixed(2) + "." + "\n";
-    outDiag.textContent = "Status: Peso Normal.";
+    outResposta.textContent = calc2.toFixed(2) + "." + "\n";
+    outDiag.textContent = "Peso Normal.";
   }
 
   if (calc2 >= 25.0 && calc2 <= 20.9) {
-    outResposta.textContent = "Seu IMC é: " + calc2.toFixed(2) + "." + "\n";
-    outDiag.textContent = "Status: Pré-obesidade.";
+    outResposta.textContent = calc2.toFixed(2) + "." + "\n";
+    outDiag.textContent = "Pré-obesidade.";
   }
 
   if (calc2 >= 30.0 && calc2 <= 34.9) {
-    outResposta.textContent = "Seu IMC é: " + calc2.toFixed(2) + "." + "\n";
-    outDiag.textContent = "Status: Obesidade de Grau 1.";
+    outResposta.textContent = calc2.toFixed(2) + "." + "\n";
+    outDiag.textContent = "Obesidade de Grau 1.";
   }
 
   if (calc2 >= 35.0 && calc2 <= 39.9) {
-    outResposta.textContent = "Seu IMC é: " + calc2.toFixed(2) + "." + "\n";
-    outDiag.textContent = "Status: Obesidade de Grau 2.";
+    outResposta.textContent = calc2.toFixed(2) + "." + "\n";
+    outDiag.textContent = "Obesidade de Grau 2.";
   }
 
   if (calc2 >= 40.0) {
-    outResposta.textContent = "Seu IMC é: " + calc2.toFixed(2) + "." + "\n";
-    outDiag.textContent = "Status: Obesidade de Grau 3.";
+    outResposta.textContent = calc2.toFixed(2) + "." + "\n";
+    outDiag.textContent = "Obesidade de Grau 3.";
   }
 }
 

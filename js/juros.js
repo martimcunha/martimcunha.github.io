@@ -19,7 +19,7 @@ function calcJuros(){
     calc1 = valor1 * (taxa1/100);
     calc2 = (calc1 * periodo) + valor1;
 
-    outResposta.textContent = "Valor Total: " + calc2.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    outResposta.textContent = calc2.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 }
 
 function clearFields() {
