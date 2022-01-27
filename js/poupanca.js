@@ -1,4 +1,4 @@
-const TAXA = 0.006371
+const TAXA = 0.006371;
 
 function poupanca() {
     var inValor = document.getElementById("inValor");
@@ -15,9 +15,10 @@ function poupanca() {
         return;
     }
 
-    var calc1 =  (valor1 * TAXA) * periodo;
+    var taxa1 = (TAXA/12) + 0.005;
+    var calc1 =  (valor1 * taxa1) * periodo;
     var calc2 = valor1 + calc1;
-    var calc3 = valor1 + (calc2 * TAXA) * periodo;
+    var calc3 = valor1 + (calc2 * taxa1) * periodo;
     var calc4 = (valor1 - calc3)* (-1);
 
     for (var i = 0; i > periodo; i++) {
@@ -33,6 +34,9 @@ function poupanca() {
 
 function clearFields() {
 
-    //document.getElementById("inValor").value = "";
-    //document.getElementById("inPeriodo").value = "";
+    function clearFields() {
+
+        document.getElementById("inValor").value = "";
+        document.getElementById("inPeriodo").value = "";
+    }
 }
