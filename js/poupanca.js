@@ -1,4 +1,4 @@
-const TAXA = 0.004586
+const TAXA = 0.006371
 
 function poupanca() {
     var inValor = document.getElementById("inValor");
