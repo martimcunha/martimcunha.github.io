@@ -39,7 +39,7 @@ function calculoImc() {
     outDiag.textContent = "Peso Normal.";
   }
 
-  if (calc2 >= 25.0 && calc2 <= 20.9) {
+  if (calc2 >= 25.0 && calc2 <= 29.9) {
     outResposta.textContent = calc2.toFixed(2) + "." + "\n";
     outDiag.textContent = "Pré-obesidade.";
   }
