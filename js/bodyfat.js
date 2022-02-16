@@ -6,8 +6,10 @@ function gordura() {
 
   var masculino = rbMasculino.checked;
   var feminino = rbFeminino.checked;
-  var imc = Number(inImc.value);
+  var imc = (inImc.value);
   var idade = Number(inIdade.value);
+
+  var imc1 = parseFloat(imc.replace("," , "."));
 
   if (masculino == false && feminino == false) {
     alert("Por favor, selecione o sexo.");
@@ -15,7 +17,7 @@ function gordura() {
     return;
   }
 
-  if (idade == 0 || imc == 0 || isNaN(idade) || isNaN(imc)){
+  if (idade == 0 || imc == 0 || isNaN(idade)) {
     alert("Por favor, preencha os campos corretamente.");
     inImc.focus();
     return;
@@ -29,7 +31,7 @@ function gordura() {
     sexo = 0;
   }
 
-  calc1 = 1.2 * imc;
+  calc1 = 1.2 * imc1;
   calc2 = 0.23 * idade;
   calc3 = 10.8 * sexo;
   calc4 = calc1 + calc2 - calc3 - 5.4;
