@@ -32,10 +32,6 @@ function poupanca() {
 }
 
 function clearFields() {
-
-    function clearFields() {
-
         document.getElementById("inValor").value = "";
         document.getElementById("inPeriodo").value = "";
     }
-}

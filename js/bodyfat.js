@@ -36,7 +36,7 @@ function gordura() {
   calc3 = 10.8 * sexo;
   calc4 = calc1 + calc2 - calc3 - 5.4;
 
-  outResposta.textContent = calc4.toFixed(2);
+  outResposta.textContent = calc4.toFixed(2) + "%";
 }
 
 function clearFields() {
