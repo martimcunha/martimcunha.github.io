@@ -89,6 +89,13 @@
                         </a>
                     </li>
                     <li>
+                        <a class="has-arrow" href="fiis.html">
+                            <div class="parent-icon icon-color-3"><i class="bx bx-line-chart"></i>
+                            </div>
+                            <div class="menu-title">FIIs</div>
+                        </a>
+                    </li>
+                    <li>
                         <a class="has-arrow" href="deslocamento.html">
                             <div class="parent-icon icon-color-5"><i class="bx bx-tachometer"></i>
                             </div>
@@ -159,31 +166,31 @@
                                     </div>
                                     <hr>
                                     <form>
-                                        <div class="form-row">
-                                            <div class="col-md-6 mb-3">
-                                                <label for="inValor">Escolha um FII:</label>
-                                                <p>
-                                                    <select name="select" id="selFii">
-                                                        <option value="mxrf11">MXRF11</option>
-                                                        <option value="knri11">KNRI11</option>
-                                                        <option value="xpci11">XPCI11</option>
-                                                    </select>
-                                                </p>
-                                            </div>
-                                        </div>
+                                        
                                         <div class="form-row">
                                             <div class="col-md-6 mb-3">
                                                 <label for="inValor">Valor Investido:</label>
 
                                                 <input type="text" class="form-control" id="inValor">
-                                                <div class="invalid-feedback">Please provide a valid city.</div>
                                             </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="inValor">Insira o DY:</label>
 
+                                                <input type="text" class="form-control" id="inDy">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="inValor">Insira o valor da cota:</label>
 
+                                                <input type="text" class="form-control" id="inCota">
+                                            </div>
                                         </div>
                                     </form>
 
-                                    <button onclick="calculoRendimento()" class="btn btn-primary"
+                                    <button onclick="calcFiis()" class="btn btn-primary"
                                         type="submit">Calcular</button>
                                     <button onclick="clearFields()" class="btn btn-warning"
                                         type="submit">Limpar</button>
@@ -191,7 +198,7 @@
                                     <br>
                                     <br>
                                     <p>Utilize esta calculadora para verificar a quantidade de cotas a serem adquiridas com base em um determinado valor
-                                        investido. Também é apresentado o valor referente ao rendimento mensal do investimento. Os dados são atualizados conforme valor da cota e DY.
+                                        investido. Também é apresentado o valor referente ao rendimento mensal do investimento.
                                     </p>
                                 </div>
                             </div>
@@ -203,8 +210,9 @@
                                         <div class="widgets-icons mx-auto rounded-circle bg-white"><i
                                                 class='bx bx-cart-alt'></i>
                                         </div>
-                                        <h4 class="text-white" id="outValorInvestido"></h4>
-                                        <h6 class="mb-0 text-white">Valor Investido</h6>
+                                        <h4 class="text-white" id="outQtdCotas"></h4>
+                                        <h6 class="mb-0 text-white">Quantidade de Cotas</h6>
+                                        <h7 class="mb-0 text-white">(Quantidade arredondada)</h7>
                                     </div>
                                 </div>
 
@@ -217,8 +225,8 @@
                                         <div class="widgets-icons mx-auto rounded-circle bg-white"><i
                                                 class='bx bx-wallet'></i>
                                         </div>
-                                        <h4 class="text-white" id="outCotas"></h4>
-                                        <h6 class="mb-0 text-white">Quantidade de Cotas</h6>
+                                        <h4 class="text-white" id="outRend"></h4>
+                                        <h6 class="mb-0 text-white">Rendimento por cota</h6>
                                     </div>
                                 </div>
                             </div>
@@ -228,8 +236,8 @@
                                         <div class="widgets-icons mx-auto rounded-circle bg-white"><i
                                                 class='bx bx-line-chart'></i>
                                         </div>
-                                        <h4 class="text-white" id="outRendimento"></h4>
-                                        <h6 class="mb-0 text-white">Rendimento Mensal</h6>
+                                        <h4 class="text-white" id="outRendTotal"></h4>
+                                        <h6 class="mb-0 text-white">Rendimento Mensal Total</h6>
                                     </div>
                                 </div>
 
@@ -251,36 +259,13 @@
                                         <div class="card">
                                             <div class="row no-gutters">
                                                 <div class="col-md-4">
-                                                    <img src="assets/images/poupanca2.png" class="card-img" alt="regra">
+                                                    <img src="assets/images/fiis.png" class="card-img" alt="regra">
                                                 </div>
                                                 <div class="col-md-8">
                                                     <div class="card-body">
-                                                        <h5 class="card-title">Cálculo Poupança</h5>
+                                                        <h5 class="card-title">Cálculo de Rendimento de FIIs</h5>
                                                         <p class="card-text">
-                                                        <p>A poupança é uma modalidade de investimento que nasceu na
-                                                            época do Brasil Império. Mais precisamente através do
-                                                            Imperador Dom Pedro II em 1861. Apesar de muito antiga, a
-                                                            poupança ainda é um investimento muito interessante. <br>
-                                                            <br> A poupança sempre é muito questionada
-                                                            pelos analistas de investimento. Porém, ainda é considerado
-                                                            uma excelente alternativa, principalmente para reservas de
-                                                            emergência. O motivo: alta liquidez. Algo primordial em uma
-                                                            reserva de emrrgência. Diferente de outros
-                                                            investimentos da renda fixa (CDB, Tesouro Direto, entre
-                                                            outros), poupança possui uma liquidez ímpar.<br>
-                                                            <br>
-                                                            Portanto, a poupança ainda é uma forma muito útil de guardar
-                                                            o seu dinheiro para qualquer emergência que
-                                                            precisar. Importante entender também que o objetivo da
-                                                            poupança, não é rentabilidade, mas sim, segurança e acesso
-                                                            fácil ao dinheiro. <br>
-                                                            <br>
-                                                            Esta calculadora visa auxiliá-lo a calcular o quanto o seu
-                                                            dinheiro renderá na poupança, com base em seu
-                                                            investimento e tempo. Tempo é um fator muito importante para
-                                                            garantir que o seu dinheiro, aplicado na poupança ou
-                                                            qualquer outro
-                                                            produto da renda fixa, possa rentabilizar mais. <br>
+                                                        <p>Em breve mais detalhes!
 
                                                         </p>
 

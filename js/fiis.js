@@ -1,35 +1,29 @@
-const frm = document.querySelector("form")
-
-function calculoRendimento() {
+function calcFiis() {
   var inValor = document.getElementById("inValor");
+  var inDy = document.getElementById("inDy");
+  var inCota = document.getElementById("inCota");
 
   var valor = inValor.value;
-  var valor2 = parseFloat(valor.replace(",", "."));
+  var dy = inDy.value;
+  var cota = inCota.value;
 
+  var inValorinValor = parseFloat(valor.replace(",", "."));
+  var inDyinDy = parseFloat(dy.replace(",", "."));
+  var inCotainCota = parseFloat(cota.replace(",", "."));
 
-  if (frm.selFii.value == "mxrf11") {
-    qtdCotas = valor2 / 9.82;
-    rendMensal = qtdCotas * 0.1;
-  }
+  calcPercent = inDyinDy/100
+  calcCotas = Math.round(inValorinValor / inCotainCota);
+  calcRend = calcCotas * calcPercent;
+  calcTotal = calcCotas * calcRend;
 
-  if (frm.selFii.value == "knri11") {
-    qtdCotas = valor2 / 136.74;
-    rendMensal = qtdCotas * 0.81;
-  }
+  outQtdCotas.textContent = calcCotas.toLocaleString("pt-BR");
 
-  if (frm.selFii.value == "xpci11") {
-    qtdCotas = valor2 / 96.99;
-    rendMensal = qtdCotas * 1.13;
-  }
-
-  outValorInvestido.textContent = valor2.toLocaleString("pt-BR", {
+  outRend.textContent = calcRend.toLocaleString("pt-BR", {
     style: "currency",
     currency: "BRL",
   });
 
-  outCotas.textContent = Math.round(qtdCotas);
-
-  outRendimento.textContent = rendMensal.toLocaleString("pt-BR", {
+  outRendTotal.textContent = calcTotal.toLocaleString("pt-BR", {
     style: "currency",
     currency: "BRL",
   });
@@ -37,5 +31,6 @@ function calculoRendimento() {
 
 function clearFields() {
   document.getElementById("inValor").value = "";
-  document.getElementById("inPeriodo").value = "";
+  document.getElementById("inDy").value = "";
+  document.getElementById("inCota").value = "";
 }
