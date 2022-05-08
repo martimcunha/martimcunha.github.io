@@ -11,9 +11,9 @@ function calcFiis() {
   var inDyinDy = parseFloat(dy.replace(",", "."));
   var inCotainCota = parseFloat(cota.replace(",", "."));
 
-  calcPercent = inDyinDy/100
+  calcPercent = inDyinDy / 100;
   calcCotas = Math.round(inValorinValor / inCotainCota);
-  calcRend = calcCotas * calcPercent;
+  calcRend = inCotainCota * calcPercent;
   calcTotal = calcCotas * calcRend;
 
   outQtdCotas.textContent = calcCotas.toLocaleString("pt-BR");
